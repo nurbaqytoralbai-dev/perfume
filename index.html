@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: flex;
+        background-color: bisque;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      button {
+        background-color: hsl(158, 42%, 18%);
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .imag {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 304px;
+      }
+      .td1 {
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+      }
+      .td2 {
+        width: 100px;
+        width: 40%;
+        font-size: 40px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: hsl(158, 36%, 37%);
+      }
+      .p1 {
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .p2 {
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="imag" src="images/image-product-desktop.jpg" alt="Perfume" />
+    <div class="all">
+      <div class="container">
+        <p class="p1">P E R F U M E</p>
+
+        <h1>Gabrielle <br />Essence Eau <br />De Parfum</h1>
+
+        <p style="font-size: 14px" ; class="p2">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <table>
+          <tr>
+            <td class="td2">$149.99</td>
+            <td class="td1">$169.99</td>
+          </tr>
+        </table>
+        <button><b>🛒 Add to Cart</b></button>
+      </div>
+    </div>
+  </body>
+</html>
